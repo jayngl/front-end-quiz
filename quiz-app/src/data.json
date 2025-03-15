@@ -1,0 +1,188 @@
+{
+  "html": [
+    {
+      "topic": "HTML",
+      "question": "What does HTML stand for?",
+      "choices": [
+        "Hyper Text Markup Language",
+        "High Tech Modern Language",
+        "Hyperlink and Text Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which HTML tag is used to define an unordered list?",
+      "choices": ["<ol>", "<ul>", "<li>", "<list>"],
+      "answer": "<ul>"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which attribute specifies an alternative text for an image, if the image cannot be displayed?",
+      "choices": ["title", "alt", "src", "href"],
+      "answer": "alt"
+    },
+    {
+      "topic": "HTML",
+      "question": "What is the correct HTML element for inserting a line break?",
+      "choices": ["<br>", "<lb>", "<break>", "<line>"],
+      "answer": "<br>"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which HTML element is used to define important text?",
+      "choices": ["<strong>", "<important>", "<b>", "<em>"],
+      "answer": "<strong>"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which HTML element defines the title of a document?",
+      "choices": ["<meta>", "<title>", "<header>", "<head>"],
+      "answer": "<title>"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "choices": ["<link>", "<a>", "<href>", "<nav>"],
+      "answer": "<a>"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which HTML tag is used to define a table?",
+      "choices": ["<table>", "<tbl>", "<tr>", "<td>"],
+      "answer": "<table>"
+    },
+    {
+      "topic": "HTML",
+      "question": "What does the <thead> tag define in an HTML table?",
+      "choices": ["Table heading", "Table row", "Table column", "Table footer"],
+      "answer": "Table heading"
+    },
+    {
+      "topic": "HTML",
+      "question": "Which attribute is used to specify that an input field must be filled out?",
+      "choices": ["validate", "required", "placeholder", "pattern"],
+      "answer": "required"
+    }
+  ],
+
+  "css": [
+    {
+      "topic": "CSS",
+      "question": "Which property is used to change the background color of an element?",
+      "choices": ["color", "background-color", "bgcolor", "background"],
+      "answer": "background-color"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which CSS property controls the text size?",
+      "choices": ["font-size", "text-size", "size", "font-style"],
+      "answer": "font-size"
+    },
+    {
+      "topic": "CSS",
+      "question": "What is the default value of the position property in CSS?",
+      "choices": ["relative", "absolute", "fixed", "static"],
+      "answer": "static"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which property is used to change the font of an element?",
+      "choices": ["font-style", "font-family", "font-weight", "text-style"],
+      "answer": "font-family"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which CSS property is used for controlling the space between elements?",
+      "choices": ["margin", "padding", "spacing", "border"],
+      "answer": "margin"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which CSS selector targets all elements of a given class?",
+      "choices": [".", "#", "*", "&"],
+      "answer": "."
+    },
+    {
+      "topic": "CSS",
+      "question": "Which property is used to make text bold?",
+      "choices": ["font-weight", "bold", "text-bold", "font-style"],
+      "answer": "font-weight"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which property controls the order of flexible items in CSS Flexbox?",
+      "choices": ["order", "sequence", "position", "arrange"],
+      "answer": "order"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which CSS property is used to make an element invisible but still occupy space?",
+      "choices": [
+        "display: none",
+        "visibility: hidden",
+        "opacity: 0",
+        "hidden: true"
+      ],
+      "answer": "visibility: hidden"
+    },
+    {
+      "topic": "CSS",
+      "question": "Which CSS unit is relative to the size of the viewport?",
+      "choices": ["em", "px", "vh", "pt"],
+      "answer": "vh"
+    }
+  ],
+
+  "javascript": [
+    {
+      "topic": "JavaScript",
+      "question": "Which of the following is used to declare a variable in JavaScript?",
+      "choices": ["var", "let", "const", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Which function is used to print something to the console?",
+      "choices": ["print()", "log()", "console.log()", "write()"],
+      "answer": "console.log()"
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Which operator is used to assign a value to a variable?",
+      "choices": ["=", "==", "===", "=>"],
+      "answer": "="
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Which method can be used to remove the last element from an array?",
+      "choices": ["pop()", "shift()", "slice()", "remove()"],
+      "answer": "pop()"
+    },
+
+    {
+      "topic": "JavaScript",
+      "question": "What will `typeof NaN` return in JavaScript?",
+      "choices": ["number", "NaN", "undefined", "object"],
+      "answer": "number"
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Which method converts a JSON string into a JavaScript object?",
+      "choices": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "parseJSON()",
+        "toObject()"
+      ],
+      "answer": "JSON.parse()"
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Which of the following is NOT a JavaScript data type?",
+      "choices": ["number", "boolean", "float", "undefined"],
+      "answer": "float"
+    }
+  ]
+}

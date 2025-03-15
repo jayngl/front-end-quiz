@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/be27bbf8b7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Quiz</title>
+  </head>
+  <body
+    class="font-Montserrat bg-[var(--main-background)] transition h-[100vh]"
+  >
+    <header class="py-5 flex justify-end items-end px-5">
+      <button class="text-[1.5rem] cursor-pointer" id="toggleTheme">
+        <i class="fa-solid fa-moon" style="color: #000000"></i>
+      </button>
+    </header>
+
+    <!-- hero section -->
+    <section
+      class="flex flex-col gap-x-10 px-5 lg:flex-row lg:gap-x-10 m-auto justify-center items-center lg:px-20 md:px-20 mt-20"
+      id="heroSection"
+    >
+      <!-- intro -->
+      <div class="flex justify-center items-start flex-col">
+        <h1 class="text-[2rem] text-[var(--heading)] lg:text-[3rem]">
+          Welcome to the <strong>Frontend Quiz! </strong>
+        </h1>
+        <p class="my-5 text-[.9rem] text-[var(--text)]">
+          pick a topic to get started.
+        </p>
+      </div>
+      <!-- quiz options -->
+      <div
+        class="flex justify-center items-start flex-col gap-y-5 py-3 ml-auto w-full lg:w-[70%]"
+      >
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition quizBtn"
+          data-quizType="html"
+        >
+          <i class="fa-brands fa-html5 mr-3"></i>
+          HTML
+        </div>
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition quizBtn"
+          data-quizType="css"
+        >
+          <i class="fa-brands fa-css3-alt mr-3"></i>
+          CSS
+        </div>
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition quizBtn"
+          data-quizType="javascript"
+        >
+          <i class="fa-brands fa-js mr-3"></i>
+          Javascript
+        </div>
+      </div>
+    </section>
+
+    <!-- quiz section -->
+    <section
+      class="hidden justify-center items-center flex-col lg:px-20 px-5 lg:flex-row"
+      id="quizSection"
+    >
+      <div class="flex justify-center items-start flex-col borders">
+        <p
+          class="mb-4 text-[.9rem] text-[var(--text)]"
+          id="currentQuestion"
+        ></p>
+        <h1
+          class="text-[1rem] text-[var(--heading)] my-4 lg:max-w-[25rem] min-w-5rem lg:text-[1.4rem]"
+          id="question"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni
+          maiores maxime, quam debitis id, quasi labore nihil quia sint itaque
+          repudiandae sunt fugiat cupiditate est beatae praesentium excepturi
+          voluptatem.
+        </h1>
+
+        <div
+          class="my-5 w-full bg-[var(--secondary-background)] rounded-[.45rem] h-[.5rem] relative"
+        >
+          <div
+            id="progressBar"
+            class="bg-purple-500 h-[0.5rem] w-0 rounded-[.45rem]"
+          ></div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center items-start flex-col gap-y-5 py-3 ml-auto w-full lg:w-[50%]"
+      >
+        <h1
+          class="ml-auto font-bold text-[1.2rem] text-[var(--heading)]"
+          id="timerDisplay"
+        >
+          0:30
+        </h1>
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition option"
+        >
+          <h1>option 1</h1>
+        </div>
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition option"
+        >
+          <h1>option 2</h1>
+        </div>
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition option"
+        >
+          option 3
+        </div>
+        <div
+          class="font-bold text-[var(--heading)] bg-[var(--secondary-background)] w-full py-3 rounded-[.45rem] pl-4 hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition option"
+        >
+          option 4
+        </div>
+        <button
+          class="w-full bg-purple-500 py-2 rounded-[.45rem] text-white font-bold hover:bg-purple-300 hover:text-[var(--heading)] cursor-pointer transition"
+          id="submitBtn"
+        >
+          Submit
+        </button>
+        <button
+          class="ml-auto bg-[var(--secondary-background)] px-4 py-1 text-[var(--heading)] font-bold hover:inset-ring-2 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition rounded-[.45rem]"
+          id="nextBtn"
+        >
+          next
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- quiz end screen -->
+    <section
+      class="flex-col gap-x-10 px-5 lg:flex-row lg:gap-x-10 m-auto justify-center items-center lg:px-20 md:px-20 mt-20 hidden"
+      id="endScreen"
+    >
+      <div class="flex justify-center items-start flex-col mb-10 lg:mb-0">
+        <h1 class="text-[2rem] text-[var(--heading)] lg:text-[3rem]">
+          Quiz Completed <strong>You Scored... </strong>
+        </h1>
+      </div>
+      <!-- quiz options -->
+      <div
+        class="flex justify-center items-center flex-col gap-y-5 py-5 px-3 ml-auto w-full lg:w-[70%] bg-[var(--secondary-background)] rounded-[.45rem]"
+      >
+        <h1
+          id="showQuizType"
+          class="text-[var(--heading)] text-[1.5rem] font-semibold"
+        ></h1>
+        <h1 id="score" class="text-[var(--heading)] text-[5rem] font-bold"></h1>
+        <p id="numberOfQuestion" class="text-[var(--text)]"></p>
+        <button
+          class="w-full px-4 py-4 text-[var(--heading)] font-bold hover:inset-ring-2 bg-purple-500 inset-ring-purple-500 hover:bg-transparent cursor-pointer transition rounded-[.45rem]"
+          id="playAgainBtn"
+        >
+          Play again
+          <i class="fa-solid fa-repeat ml-2"></i>
+        </button>
+      </div>
+    </section>
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>

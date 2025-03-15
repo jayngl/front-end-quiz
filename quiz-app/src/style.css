@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --main-background: #ffff;
+  --text: #808080;
+  --heading: #242424;
+  --secondary-background: #d3d3d3;
+}
+
+@theme {
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+
+.darkmode {
+  --main-background: #242424;
+  --text: #8293aa;
+  --heading: #ffff;
+  --secondary-background: #3c4d67;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
